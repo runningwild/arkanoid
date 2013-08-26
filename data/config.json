@@ -1,0 +1,28 @@
+{
+  "WindowWidth": 800,
+  "WindowHeight": 600,
+
+  "ViewDepth": 100,
+  "CameraHorzFovDegrees": 90,
+
+  "BlockWidth": 1.0,
+  "BlockHeight": 0.5,
+  "BlockDepth": 0.5,
+
+  "BallRadius": 0.4,
+
+  "TargetAreaXBlocks": 7,
+  "TargetAreaYBlocks": 6,
+  "TargetAreaZBlocks": 7,
+
+  "BasePaddleWidth": 1.8,
+  "BasePaddleHeight": 1.3,
+  "PaddleDepth": 0.5,
+
+	"PaddleBackColor": { "R": 0.6, "G": 0.6, "B": 1.0, "A": 0.7 },
+	"PaddleFrontColor": { "R": 0.3, "G": 0.3, "B": 1.0, "A": 0.7 },
+	"PaddleBackEdgeColor": { "R": 0, "G": 0, "B": 0.6, "A": 1.0 },
+	"PaddleFrontEdgeColor": { "R": 0, "G": 0, "B": 0.3, "A": 0.4 },
+
+	"FrameTime": 0.016
+}

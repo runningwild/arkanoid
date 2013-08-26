@@ -1,0 +1,81 @@
+{
+  "Players": [
+    {
+      "Orientation": {
+        "Right": { "X": 1, "Y": 0, "Z": 0 },
+        "Up": { "X": 0, "Y": 1, "Z": 0 },
+        "Forward": { "X": 0, "Y": 0, "Z": 1 }
+      },
+
+      "PaddleAreaCenter": { "X": 0, "Y": 0, "Z": 0 },
+      "PaddleAreaWidth": 8,
+      "PaddleAreaHeight": 6,
+
+      "TargetAreaCenter": { "X": 0, "Y": 0, "Z": 5 }
+    }
+  ],
+
+  "Walls": [
+    {
+      "Vertices": [
+        { "Position": { "X": -4, "Y": -3, "Z": 10 }, "Tu": -4, "Tv": 10,
+          "Color": {"R": 0.8, "G": 0.8, "B": 0.8, "A": 1} },
+        { "Position": { "X": 4, "Y": -3, "Z": 10 }, "Tu": 4, "Tv": 10,
+          "Color": {"R": 0.8, "G": 0.8, "B": 0.8, "A": 1} },
+        { "Position": { "X": 4, "Y": -3, "Z": 0 }, "Tu": 4, "Tv": 0,
+          "Color": {"R": 1, "G": 1, "B": 1, "A": 1} },
+        { "Position": { "X": -4, "Y": -3, "Z": 0 }, "Tu": -4, "Tv": 0,
+          "Color": {"R": 1, "G": 1, "B": 1, "A": 1} }
+      ],
+      "TextureIndex": 0
+    }, {
+      "Vertices": [
+        { "Position": { "X": -4, "Y": 3, "Z": 0 }, "Tu": -4, "Tv": 3,
+          "Color": {"R": 0.9, "G": 0.9, "B": 0.9, "A": 1} },
+        { "Position": { "X": -4, "Y": 3, "Z": 10 }, "Tu": 4, "Tv": 3,
+          "Color": {"R": 0.7, "G": 0.7, "B": 0.7, "A": 1} },
+        { "Position": { "X": -4, "Y": -3, "Z": 10 }, "Tu": 4, "Tv": -3,
+          "Color": {"R": 0.7, "G": 0.7, "B": 0.7, "A": 1} },
+        { "Position": { "X": -4, "Y": -3, "Z": 0 }, "Tu": -4, "Tv": -3,
+          "Color": {"R": 0.9, "G": 0.9, "B": 0.9, "A": 1} }
+      ],
+      "TextureIndex": 0
+    }, {
+      "Vertices": [
+        { "Position": { "X": -4, "Y": 3, "Z": 0 }, "Tu": -4, "Tv": 0,
+          "Color": {"R": 1, "G": 1, "B": 1, "A": 1} },
+        { "Position": { "X": 4, "Y": 3, "Z": 0 }, "Tu": 4, "Tv": 0,
+          "Color": {"R": 1, "G": 1, "B": 1, "A": 1} },
+        { "Position": { "X": 4, "Y": 3, "Z": 10 }, "Tu": 4, "Tv": 10,
+          "Color": {"R": 0.8, "G": 0.8, "B": 0.8, "A": 1} },
+        { "Position": { "X": -4, "Y": 3, "Z": 10 }, "Tu": -4, "Tv": 10,
+          "Color": {"R": 0.8, "G": 0.8, "B": 0.8, "A": 1} }
+      ],
+      "TextureIndex": 0
+    }, {
+      "Vertices": [
+        { "Position": { "X": 4, "Y": -3, "Z": 0 }, "Tu": -4, "Tv": -3,
+          "Color": {"R": 0.9, "G": 0.9, "B": 0.9, "A": 1} },
+        { "Position": { "X": 4, "Y": -3, "Z": 10 }, "Tu": 4, "Tv": -3,
+          "Color": {"R": 0.7, "G": 0.7, "B": 0.7, "A": 1} },
+        { "Position": { "X": 4, "Y": 3, "Z": 10 }, "Tu": 4, "Tv": 3,
+          "Color": {"R": 0.7, "G": 0.7, "B": 0.7, "A": 1} },
+        { "Position": { "X": 4, "Y": 3, "Z": 0 }, "Tu": -4, "Tv": 3,
+          "Color": {"R": 0.9, "G": 0.9, "B": 0.9, "A": 1} }
+      ],
+      "TextureIndex": 0
+    }, {
+      "Vertices": [
+        { "Position": { "X": -4, "Y": 3, "Z": 10 }, "Tu": -4, "Tv": 3,
+          "Color": {"R": 0.7, "G": 0.7, "B": 0.7, "A": 1} },
+        { "Position": { "X": 4, "Y": 3, "Z": 10 }, "Tu": 4, "Tv": 3,
+          "Color": {"R": 0.7, "G": 0.7, "B": 0.7, "A": 1} },
+        { "Position": { "X": 4, "Y": -3, "Z": 10 }, "Tu": 4, "Tv": -3,
+          "Color": {"R": 0.7, "G": 0.7, "B": 0.7, "A": 1} },
+        { "Position": { "X": -4, "Y": -3, "Z": 10 }, "Tu": -4, "Tv": -3,
+          "Color": {"R": 0.7, "G": 0.7, "B": 0.7, "A": 1} }
+      ],
+      "TextureIndex": 0
+    }
+  ]
+}
