@@ -1,0 +1,20 @@
+set -e
+
+function doBuild {
+  go build --tags $1 .
+  rm -rf $1.app
+  mkdir -p $1.app/Contents/MacOS
+  mkdir -p $1.app/Contents/lib
+  mv arkanoid $1.app/Contents/MacOS/$1
+  cp $GOPATH/src/github.com/runningwild/glop/gos/darwin/lib/libglop.so $1.app/Contents/lib
+
+  install_name_tool -change ./libfmodex.dylib @executable_path/../lib/libfmodex.dylib ./$1.app/Contents/MacOS/$1
+  install_name_tool -change ./libfmodexL.dylib @executable_path/../lib/libfmodexL.dylib ./$1.app/Contents/MacOS/$1
+  install_name_tool -change ./libfmodevent.dylib @executable_path/../lib/libfmodevent.dylib ./$1.app/Contents/MacOS/$1
+
+  cp -r data/* $1.app/Contents/
+}
+
+doBuild 'host'
+open host.app
+

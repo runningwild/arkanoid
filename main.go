@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	gl "github.com/chsc/gogl/gl21"
+	"github.com/dgthunder/arkanoid/base"
 	"github.com/runningwild/cgf"
 	"github.com/runningwild/glop/gin"
 	"github.com/runningwild/glop/gos"
@@ -11,6 +12,7 @@ import (
 	"github.com/runningwild/glop/system"
 	"io/ioutil"
 	"os"
+	"path/filepath"
 	"runtime"
 	"time"
 )
@@ -35,7 +37,7 @@ func init() {
 	// Required for Darwin.
 	runtime.LockOSThread()
 
-	loadJson("data/config.json", &Config)
+	loadJson(filepath.Join(base.DataDir(), "config.json"), &Config)
 }
 
 func initWindow(sys system.System, width int, height int) {
@@ -64,7 +66,7 @@ func main() {
 
 	game := Game{}
 	var lb LevelBlueprint
-	loadJson("data/1p_basic_level.json", &lb)
+	loadJson(filepath.Join(base.DataDir(), "1p_basic_level.json"), &lb)
 	if len(lb.Players) == 0 || len(lb.Walls) == 0 {
 		panic(fmt.Sprintf("Invalid level config: %d players and %d walls.",
 			len(lb.Players), len(lb.Walls)))
