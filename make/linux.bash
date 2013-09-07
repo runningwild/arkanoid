@@ -4,7 +4,7 @@ PACKAGE=arkanoid
 
 cd $GOPATH/src/github.com/$USER/$PACKAGE
 
-if go build . ; then
+if CGO_LDFLAGS=-L../glop/gos/linux/lib go build . ; then
 		rm -rf bin
 		mkdir bin
 		mkdir bin/data
